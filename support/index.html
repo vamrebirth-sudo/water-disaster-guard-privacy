@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="HydroGuard 使用支援、官方 API 申請方式與聯絡資訊。"
+    />
+    <meta name="color-scheme" content="light" />
+    <title>HydroGuard 支援</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__inner">
+        <div class="topbar">
+          <a class="brand" href="../" aria-label="HydroGuard privacy policy">
+            <span class="brand__mark" aria-hidden="true">≋</span>
+            <span>HydroGuard</span>
+          </a>
+          <nav class="site-nav" aria-label="Site">
+            <a href="../">隱私權政策</a>
+            <a aria-current="page" href="./">支援</a>
+          </nav>
+        </div>
+        <p class="hero__eyebrow">Support · Local first</p>
+        <h1>使用支援</h1>
+        <p class="hero__lead">
+          查找 API 申請方式、權限處理與資料更新說明，或直接聯絡 HydroGuard 開發者。
+        </p>
+      </div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <aside class="summary-card" aria-label="Support summary">
+        <div>
+          <span class="summary-card__label">支援信箱</span>
+          <a href="mailto:vamrebirth@gmail.com">vamrebirth@gmail.com</a>
+        </div>
+        <div>
+          <span class="summary-card__label">App 帳號</span>
+          <strong>不需註冊或登入</strong>
+        </div>
+        <div>
+          <span class="summary-card__label">資料原則</span>
+          <strong>本機保存為優先</strong>
+        </div>
+      </aside>
+
+      <article class="policy" lang="zh-Hant">
+        <header class="policy__header">
+          <span class="policy__locale">繁體中文</span>
+          <h2>如何取得協助</h2>
+          <p>請在來信中附上 App 版本、iOS 版本、發生問題的畫面與操作步驟，但不要寄送 API 密碼、Token 或授權碼。</p>
+          <div class="support-actions">
+            <a class="support-action" href="mailto:vamrebirth@gmail.com">寄信給開發者</a>
+            <a class="support-action" href="../">查看隱私權政策</a>
+          </div>
+        </header>
+
+        <section>
+          <h3>官方 API 需要自行申請</h3>
+          <p>
+            HydroGuard 不提供、代管或共用政府 API 憑證。部分即時功能需要你先向資料來源平台申請，再到 App 的「API 設定」輸入。
+          </p>
+          <div class="support-grid">
+            <div class="support-panel">
+              <h3>中央氣象署</h3>
+              <p>申請氣象資料開放平臺授權碼，用於天氣、雨量、預報及警特報資料。</p>
+              <a href="https://opendata.cwa.gov.tw/about/application/general">查看官方申請說明</a>
+            </div>
+            <div class="support-panel">
+              <h3>經濟部水利署</h3>
+              <p>依水資源物聯網入口網說明申請 API 認證 ID 與密碼，用於受保護的水情資料。</p>
+              <a href="https://iot.wra.gov.tw/WaterAPIManualDoc_single.jsp">查看官方 API 手冊</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>沒有 API 憑證可以使用嗎？</h3>
+          <p>
+            可以。你仍可查看 App 內附資料、本機快取及部分不需授權的資訊；需要認證的最新資料可能無法載入。實際可用範圍取決於官方服務、帳號權限與網路狀況。
+          </p>
+        </section>
+
+        <section>
+          <h3>定位沒有資料</h3>
+          <ol>
+            <li>到 iOS「設定」確認 HydroGuard 的定位權限為「使用 App 期間」。</li>
+            <li>回到 App 後重新按目前位置或重新整理。</li>
+            <li>仍無法定位時，可改用手動選擇縣市與行政區。</li>
+            <li>定位成功但測站沒有數值，可能是官方資料尚未更新或該區附近沒有對應設施。</li>
+          </ol>
+          <p>HydroGuard 不會在背景持續追蹤你的移動路徑。</p>
+        </section>
+
+        <section>
+          <h3>相機、相簿或 QR Code 無法使用</h3>
+          <p>
+            到 iOS「設定」中檢查 HydroGuard 的相機與照片權限。QR Code 只用來在裝置上讀取你選擇的 API 設定內容，不會自動送出或公開憑證。
+          </p>
+        </section>
+
+        <section>
+          <h3>如何清除 API 憑證</h3>
+          <p>
+            請在 App 的 API 設定中清除水利署認證資料與中央氣象署授權碼。建議先在 App 內清除，再移除 App，因為部分安全儲存項目的保留行為受 iOS Keychain 規則影響。
+          </p>
+        </section>
+
+        <section>
+          <h3>災情回報會直接送到政府嗎？</h3>
+          <p>
+            不會。HydroGuard 目前建立的是保存在裝置上的回報草稿，只有你使用 iOS 系統分享面板並確認後，內容才會交給你選擇的 App 或服務。遇到立即危險時，請直接撥打 119 或 110，並以政府公告與現場指揮為準。
+          </p>
+        </section>
+
+        <section class="contact-card">
+          <h3>聯絡 HydroGuard</h3>
+          <p>支援與隱私問題請寄送電子郵件：</p>
+          <a href="mailto:vamrebirth@gmail.com">vamrebirth@gmail.com</a>
+        </section>
+      </article>
+
+      <footer>
+        <p>© 2026 HydroGuard independent developer.</p>
+        <p>
+          This static support page does not add advertising or analytics scripts. Hosting infrastructure may process technical request data under the
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
