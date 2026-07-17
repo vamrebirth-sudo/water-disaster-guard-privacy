@@ -29,6 +29,12 @@
         <p class="hero__lead">
           查找 API 申請方式、權限處理與資料更新說明，或直接聯絡 HydroGuard 開發者。
         </p>
+        <nav class="language-nav" aria-label="Language">
+          <a href="#zh-TW">繁體中文</a>
+          <a href="#en">English</a>
+          <a href="#ja">日本語</a>
+          <a href="#ko">한국어</a>
+        </nav>
       </div>
     </header>
 
@@ -48,7 +54,7 @@
         </div>
       </aside>
 
-      <article class="policy" lang="zh-Hant">
+      <article id="zh-TW" class="policy" lang="zh-Hant">
         <header class="policy__header">
           <span class="policy__locale">繁體中文</span>
           <h2>如何取得協助</h2>
@@ -120,6 +126,234 @@
         <section class="contact-card">
           <h3>聯絡 HydroGuard</h3>
           <p>支援與隱私問題請寄送電子郵件：</p>
+          <a href="mailto:vamrebirth@gmail.com">vamrebirth@gmail.com</a>
+        </section>
+      </article>
+
+      <article id="en" class="policy" lang="en">
+        <header class="policy__header">
+          <span class="policy__locale">English</span>
+          <h2>How to get help</h2>
+          <p>Include the App version, iOS version, a screenshot, and the steps that caused the issue. Never email an API password, token, or authorization key.</p>
+          <div class="support-actions">
+            <a class="support-action" href="mailto:vamrebirth@gmail.com">Email the developer</a>
+            <a class="support-action" href="../#en">Read the privacy policy</a>
+          </div>
+        </header>
+
+        <section>
+          <h3>Apply for official API access</h3>
+          <p>
+            HydroGuard does not provide, host, or share government API credentials. Some current-data features require credentials from the official source, entered later in API Settings.
+          </p>
+          <div class="support-grid">
+            <div class="support-panel">
+              <h3>Central Weather Administration</h3>
+              <p>Apply for an Open Data Platform authorization key for weather observations, rainfall, forecasts, and official alerts.</p>
+              <a href="https://opendata.cwa.gov.tw/about/application/general">Open the official application guide</a>
+            </div>
+            <div class="support-panel">
+              <h3>Water Resources Agency</h3>
+              <p>Follow the Water Resources IoT Portal guide to apply for an API credential ID and password for protected water data.</p>
+              <a href="https://iot.wra.gov.tw/WaterAPIManualDoc_single.jsp">Open the official API manual</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Can I use the App without API credentials?</h3>
+          <p>
+            Yes. Bundled data, local caches, and some unprotected information remain available. Features that require authorization may not load the latest data. Availability depends on the official service, account permissions, and network conditions.
+          </p>
+        </section>
+
+        <section>
+          <h3>Location does not return data</h3>
+          <ol>
+            <li>In iOS Settings, allow HydroGuard to use location while using the App.</li>
+            <li>Return to the App and try Current Location or refresh again.</li>
+            <li>If location remains unavailable, select a county and district manually.</li>
+            <li>If location works but no reading appears, the official source may be delayed or no matching facility may be nearby.</li>
+          </ol>
+          <p>HydroGuard does not continuously track your route in the background.</p>
+        </section>
+
+        <section>
+          <h3>Camera, photo library, or QR code access does not work</h3>
+          <p>
+            Check HydroGuard camera and photo permissions in iOS Settings. QR codes are read on your device only to fill the API settings you select. Credentials are not automatically submitted or published.
+          </p>
+        </section>
+
+        <section>
+          <h3>How to clear API credentials</h3>
+          <p>
+            Clear the WRA credentials and CWA authorization key in API Settings. Clear them inside the App before uninstalling because some secure-storage behavior is controlled by iOS Keychain rules.
+          </p>
+        </section>
+
+        <section>
+          <h3>Are incident reports sent directly to the government?</h3>
+          <p>
+            No. HydroGuard currently creates local drafts. Content leaves the App only after you confirm sharing through the iOS share sheet and choose a destination. For immediate danger, call 119 or 110 and follow official notices and on-site instructions.
+          </p>
+        </section>
+
+        <section class="contact-card">
+          <h3>Contact HydroGuard</h3>
+          <p>For support or privacy questions, email:</p>
+          <a href="mailto:vamrebirth@gmail.com">vamrebirth@gmail.com</a>
+        </section>
+      </article>
+
+      <article id="ja" class="policy" lang="ja">
+        <header class="policy__header">
+          <span class="policy__locale">日本語</span>
+          <h2>サポートについて</h2>
+          <p>App のバージョン、iOS のバージョン、問題画面、操作手順をお知らせください。API のパスワード、Token、認証キーはメールで送らないでください。</p>
+          <div class="support-actions">
+            <a class="support-action" href="mailto:vamrebirth@gmail.com">開発者にメール</a>
+            <a class="support-action" href="../#ja">プライバシーポリシー</a>
+          </div>
+        </header>
+
+        <section>
+          <h3>公式 API は利用者自身で申請します</h3>
+          <p>
+            HydroGuard は政府 API の認証情報を提供、保管、共有しません。一部の最新データ機能では、公式提供元で申請した認証情報を App の「API 設定」に入力する必要があります。
+          </p>
+          <div class="support-grid">
+            <div class="support-panel">
+              <h3>中央気象署</h3>
+              <p>気象観測、雨量、予報、警報データ用の気象資料開放プラットフォーム認証キーを申請します。</p>
+              <a href="https://opendata.cwa.gov.tw/about/application/general">公式申請案内を開く</a>
+            </div>
+            <div class="support-panel">
+              <h3>経済部水利署</h3>
+              <p>水資源 IoT ポータルの案内に従い、保護された水情データ用の API 認証 ID とパスワードを申請します。</p>
+              <a href="https://iot.wra.gov.tw/WaterAPIManualDoc_single.jsp">公式 API マニュアルを開く</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>API 認証情報がなくても使えますか？</h3>
+          <p>
+            はい。App 同梱データ、ローカルキャッシュ、一部の認証不要情報は利用できます。認証が必要な機能では最新データを取得できない場合があります。利用可否は公式サービス、アカウント権限、通信状況によって変わります。
+          </p>
+        </section>
+
+        <section>
+          <h3>位置情報を使ってもデータが表示されない</h3>
+          <ol>
+            <li>iOS の「設定」で HydroGuard の位置情報を「App の使用中」に設定します。</li>
+            <li>App に戻り、現在地または更新をもう一度実行します。</li>
+            <li>位置情報を取得できない場合は、県市と行政区を手動で選択します。</li>
+            <li>位置情報が取得できても値がない場合、公式データの遅延や周辺施設がない可能性があります。</li>
+          </ol>
+          <p>HydroGuard はバックグラウンドで移動経路を継続追跡しません。</p>
+        </section>
+
+        <section>
+          <h3>カメラ、写真、QR コードが使えない</h3>
+          <p>
+            iOS の「設定」で HydroGuard のカメラと写真の権限を確認してください。QR コードは、選択した API 設定を端末内で読み取るためだけに使います。認証情報を自動送信または公開することはありません。
+          </p>
+        </section>
+
+        <section>
+          <h3>API 認証情報を削除する</h3>
+          <p>
+            App の「API 設定」で WRA 認証情報と CWA 認証キーを消去してください。安全な保存項目の一部は iOS Keychain の規則に従うため、App を削除する前に App 内で消去することを推奨します。
+          </p>
+        </section>
+
+        <section>
+          <h3>災害報告は政府へ直接送信されますか？</h3>
+          <p>
+            いいえ。HydroGuard は現在、端末内の下書きを作成します。iOS 共有シートで利用者が送信先を選び、確認した場合だけ内容が App の外へ渡ります。直ちに危険がある場合は 119 または 110 に連絡し、公式発表と現場の指示に従ってください。
+          </p>
+        </section>
+
+        <section class="contact-card">
+          <h3>HydroGuard へのお問い合わせ</h3>
+          <p>サポートまたはプライバシーに関するお問い合わせ：</p>
+          <a href="mailto:vamrebirth@gmail.com">vamrebirth@gmail.com</a>
+        </section>
+      </article>
+
+      <article id="ko" class="policy" lang="ko">
+        <header class="policy__header">
+          <span class="policy__locale">한국어</span>
+          <h2>지원 받기</h2>
+          <p>App 버전, iOS 버전, 문제 화면과 재현 단계를 보내 주세요. API 비밀번호, Token 또는 인증 키는 이메일로 보내지 마세요.</p>
+          <div class="support-actions">
+            <a class="support-action" href="mailto:vamrebirth@gmail.com">개발자에게 이메일</a>
+            <a class="support-action" href="../#ko">개인정보 처리방침</a>
+          </div>
+        </header>
+
+        <section>
+          <h3>공식 API는 사용자가 직접 신청해야 합니다</h3>
+          <p>
+            HydroGuard는 정부 API 인증 정보를 제공, 보관 또는 공유하지 않습니다. 일부 최신 데이터 기능은 공식 제공처에서 인증 정보를 신청한 후 App의「API 설정」에 입력해야 합니다.
+          </p>
+          <div class="support-grid">
+            <div class="support-panel">
+              <h3>중앙기상서</h3>
+              <p>기상 관측, 강우량, 예보 및 공식 경보 데이터에 사용할 기상자료 개방 플랫폼 인증 키를 신청합니다.</p>
+              <a href="https://opendata.cwa.gov.tw/about/application/general">공식 신청 안내 열기</a>
+            </div>
+            <div class="support-panel">
+              <h3>경제부 수리서</h3>
+              <p>수자원 IoT 포털 안내에 따라 보호된 수자원 데이터용 API 인증 ID와 비밀번호를 신청합니다.</p>
+              <a href="https://iot.wra.gov.tw/WaterAPIManualDoc_single.jsp">공식 API 안내서 열기</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>API 인증 정보 없이 사용할 수 있나요?</h3>
+          <p>
+            네. App에 포함된 데이터, 로컬 캐시 및 일부 인증이 필요 없는 정보는 계속 사용할 수 있습니다. 인증이 필요한 기능은 최신 데이터를 불러오지 못할 수 있습니다. 사용 가능 범위는 공식 서비스, 계정 권한 및 네트워크 상태에 따라 달라집니다.
+          </p>
+        </section>
+
+        <section>
+          <h3>현재 위치에서 데이터가 표시되지 않습니다</h3>
+          <ol>
+            <li>iOS 설정에서 HydroGuard의 위치 권한을「App을 사용하는 동안」으로 허용합니다.</li>
+            <li>App으로 돌아가 현재 위치 또는 새로고침을 다시 실행합니다.</li>
+            <li>위치를 가져올 수 없으면 시·현과 행정구역을 직접 선택합니다.</li>
+            <li>위치는 확인되지만 값이 없으면 공식 데이터가 지연되었거나 주변에 해당 시설이 없을 수 있습니다.</li>
+          </ol>
+          <p>HydroGuard는 백그라운드에서 이동 경로를 지속적으로 추적하지 않습니다.</p>
+        </section>
+
+        <section>
+          <h3>카메라, 사진 또는 QR 코드가 작동하지 않습니다</h3>
+          <p>
+            iOS 설정에서 HydroGuard의 카메라 및 사진 권한을 확인하세요. QR 코드는 선택한 API 설정을 기기에서 읽는 용도로만 사용됩니다. 인증 정보를 자동으로 전송하거나 공개하지 않습니다.
+          </p>
+        </section>
+
+        <section>
+          <h3>API 인증 정보를 삭제하는 방법</h3>
+          <p>
+            App의「API 설정」에서 WRA 인증 정보와 CWA 인증 키를 삭제하세요. 일부 보안 저장 항목은 iOS Keychain 규칙의 영향을 받으므로 App을 제거하기 전에 App 안에서 먼저 삭제하는 것이 좋습니다.
+          </p>
+        </section>
+
+        <section>
+          <h3>재난 제보가 정부에 직접 전송되나요?</h3>
+          <p>
+            아니요. HydroGuard는 현재 기기에 로컬 초안을 만듭니다. 사용자가 iOS 공유 시트에서 대상을 선택하고 확인한 경우에만 콘텐츠가 App 밖으로 전달됩니다. 즉각적인 위험이 있으면 119 또는 110에 연락하고 공식 공지와 현장 지시에 따르세요.
+          </p>
+        </section>
+
+        <section class="contact-card">
+          <h3>HydroGuard 문의</h3>
+          <p>지원 또는 개인정보 관련 문의:</p>
           <a href="mailto:vamrebirth@gmail.com">vamrebirth@gmail.com</a>
         </section>
       </article>
